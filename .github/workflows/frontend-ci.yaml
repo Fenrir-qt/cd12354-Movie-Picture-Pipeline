@@ -77,5 +77,5 @@ jobs:
         run: CI=true npm test
 
       - name: Build Docker image
-        run: docker build --build-arg=REACT_APP_MOVIE_API_URL=http://localhost:5000 -t mp-frontend:latest .
+        run: docker build --build-arg=REACT_APP_MOVIE_API_URL=http://a4da7c72d9c284340ac77cb281ad1044-373010083.us-east-1.elb.amazonaws.com -t mp-frontend:latest .
 
