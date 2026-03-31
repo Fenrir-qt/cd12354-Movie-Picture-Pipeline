@@ -136,4 +136,3 @@ jobs:
       - name: Deploy to EKS
         run: |
           kustomize build . | kubectl apply -f -
-
